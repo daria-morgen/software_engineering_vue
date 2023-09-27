@@ -1,3 +1,3 @@
 <template>
-    <div><span>MiddleName</span></div>
+  <span>MiddleName</span>
 </template>

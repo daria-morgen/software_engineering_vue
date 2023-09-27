@@ -1,3 +1,3 @@
 <template>
-    <div><span>FirsName</span></div>
+    <span>FirsName</span>
 </template>

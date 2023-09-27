@@ -1,3 +1,3 @@
 <template>
-    <div><span>Volume</span></div>
+  <span>Volume</span>
 </template>

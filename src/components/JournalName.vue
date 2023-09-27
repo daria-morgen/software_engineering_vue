@@ -1,3 +1,3 @@
 <template>
-    <div><span>JournalName</span></div>
+    <span>JournalName</span>
 </template>

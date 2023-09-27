@@ -1,3 +1,3 @@
 <template>
-    <div><span>LastName</span></div>
+    <span>LastName</span>
 </template>

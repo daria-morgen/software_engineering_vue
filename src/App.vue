@@ -26,6 +26,55 @@
         </th>
       </tr>
     </table>
+
+    <hr>
+    <div>
+      <div>
+        <!--         вида: «[AuthorLastName], [AFN]. [AMN].
+        [ArticleName] / [AFN]. [AMN]. [AuthorLastName] // [Journal Name]. – Vol.
+        [Volume]. – Iss. [Issue]. – Pp. [Pages]».-->
+        <span v-if="isShow">«[
+          <LastName></LastName>
+          ],
+          [
+          <FirstName></FirstName>
+          ].
+          [
+          <MiddleName></MiddleName>
+          ].
+          [
+          <ArticleName></ArticleName>
+          ]/
+          [
+          <FirstName></FirstName>
+          ].
+          [
+          <MiddleName></MiddleName>
+          ].
+          [
+          <LastName></LastName>
+          ]//
+          [
+          <JournalName></JournalName>
+          ]. - vol.
+          [
+          <VolumeComponent></VolumeComponent>
+          ]. --Iss.
+          [
+          <IssueComponent></IssueComponent>
+          ]. - Pp.
+          [
+          <PagesComponent></PagesComponent>
+          ]»
+        </span>
+      </div>
+      <br>
+      <div>
+        <button v-on:click="isShow=true" :disabled='isShow===true'>Показать</button>
+        <span> | </span>
+        <button v-on:click="isShow=false" :disabled='isShow===false'>Скрыть</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -53,7 +102,8 @@ export default {
   },
   data() {
     return {
-      counter: 0
+      counter: 0,
+      isShow: false
     }
   },
 
@@ -64,7 +114,7 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
   margin-top: 60px;
 }
