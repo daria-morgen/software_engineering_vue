@@ -70,9 +70,7 @@
       </div>
       <br>
       <div>
-        <button v-on:click="isShow=true" :disabled='isShow===true'>Показать</button>
-        <span> | </span>
-        <button v-on:click="isShow=false" :disabled='isShow===false'>Скрыть</button>
+        <button v-on:click="isShow=!isShow">Показать/скрыть</button>
       </div>
     </div>
   </div>
