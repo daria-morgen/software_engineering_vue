@@ -15,7 +15,7 @@
       </tr>
     </table>
     <hr>
-    <title>{{ authorLink }}</title>
+    <span>{{ authorLink }}</span>
     <br>
     <button @click="showAuthorLink">Отобразить ссылку</button>
   </div>
